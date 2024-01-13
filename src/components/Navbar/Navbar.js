@@ -23,8 +23,8 @@ const Navbar = () => {
     dispatch(getCartTotal());
   }, [carts])
 
-  return (
-    <nav className='navbar'>
+  return ( 
+    <nav className='navbar'> 
       <div className='navbar-cnt flex align-center'>
         <div className='brand-and-toggler flex align-center'>
           <button type = "button" className='sidebar-show-btn text-white' onClick={() => dispatch(setSidebarOn())}>
@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
+  ) 
 }
 
 export default Navbar
