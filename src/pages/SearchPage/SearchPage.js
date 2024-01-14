@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import "./SearchPage.scss";
+import React, { useEffect } from 'react';
+import "./SearchPage.css";
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { STATUS } from '../../utils/status';
@@ -9,7 +9,7 @@ import { fetchAsyncSearchProduct, getSearchProducts, setSearchTerm, getSearchPro
 
 const SearchPage = () => {
   const dispatch = useDispatch();
-  const {searchTerm } = useParams();
+  const { searchTerm } = useParams();
   const searchProducts = useSelector(getSearchProducts);
   const searchProductsStatus = useSelector(getSearchProductsStatus);
 
@@ -18,9 +18,9 @@ const SearchPage = () => {
     dispatch(fetchAsyncSearchProduct(searchTerm));
   }, [searchTerm]);
 
-  if(searchProducts.length === 0){
+  if (searchProducts.length === 0) {
     return (
-      <div className='container' style = {{
+      <div className='container' style={{
         minHeight: "70vh"
       }}>
         <div className='fw-5 text-danger py-5'>
@@ -40,7 +40,7 @@ const SearchPage = () => {
             </div>
             <br />
             {
-              searchProductsStatus === STATUS.LOADING ? <Loader /> : <ProductList products = {searchProducts} />
+              searchProductsStatus === STATUS.LOADING ? <Loader /> : <ProductList products={searchProducts} />
             }
           </div>
         </div>

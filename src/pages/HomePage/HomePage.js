@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import "./HomePage.scss";
+import "./HomePage.css";
 import HeaderSlider from "../../components/Slider/HeaderSlider";
 import { useSelector, useDispatch } from 'react-redux';
 import { getAllCategories } from '../../store/categorySlice';
