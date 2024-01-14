@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     dispatch(getCartTotal());
-  }, [carts])
+  },  [dispatch]);
 
   return (
     <header>
@@ -48,11 +48,11 @@ const Navbar = () => {
       </section>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <h4>
               Bandage
             </h4>
-          </a>
+          </Link>
           <button className="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar">
             <i className="fas fa-bars"></i>
@@ -67,12 +67,14 @@ const Navbar = () => {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-center flex-grow-1">
                 <li className="nav-item">
-                  <Link to="/" className="routers"><a className="nav-link">Home</a></Link>
+                  <Link to="/" className="routers nav-link">
+                    Home
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#">
+                  <Link to="/" className="nav-link dropdown-toggle">
                     Shop
-                  </a>
+                  </Link>
                   <div className="dropdown-content container desktop-dropdown">
 
                   </div>

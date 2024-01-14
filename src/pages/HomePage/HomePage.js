@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import "./HomePage.css";
+import { Link } from "react-router-dom";
 import Header from "../../components/Slider/Header";
 import { useSelector, useDispatch } from 'react-redux';
-import { getAllCategories } from '../../store/categorySlice';
 import ProductList from "../../components/ProductList/ProductList";
 import { fetchAsyncProducts, getAllProducts, getAllProductsStatus } from '../../store/productSlice';
 import Loader from "../../components/Loader/Loader";
@@ -10,11 +10,10 @@ import { STATUS } from '../../utils/status';
 
 const HomePage = () => {
   const dispatch = useDispatch();
-  const categories = useSelector(getAllCategories);
 
   useEffect(() => {
-    dispatch(fetchAsyncProducts(50));
-  }, []);
+    dispatch(fetchAsyncProducts(8));
+  }, [dispatch]);
 
   const products = useSelector(getAllProducts);
   const productStatus = useSelector(getAllProductsStatus);
@@ -151,7 +150,9 @@ const HomePage = () => {
                   <div className="span mb-3 ">
                     <i className="bi bi-clock"></i> 22 April 2024 <i className="bi bi-chat-dots"></i> 10 comments
                   </div>
-                  <a href="#" className="btn">Learn More <i className="bi bi-chevron-right"></i></a>
+                  <Link to="" className="btn">
+                    Learn More <i className="bi bi-chevron-right"></i>  
+                  </Link>
                 </div>
               </div>
             </div>
@@ -168,7 +169,9 @@ const HomePage = () => {
                   <div className="span mb-3 ">
                     <i className="bi bi-clock"></i> 22 April 2024 <i className="bi bi-chat-dots"></i> 10 comments
                   </div>
-                  <a href="#" className="btn">Learn More <i className="bi bi-chevron-right"></i></a>
+                  <Link to="" className="btn">
+                    Learn More <i className="bi bi-chevron-right"></i>  
+                  </Link>
                 </div>
               </div>
             </div>
@@ -185,7 +188,9 @@ const HomePage = () => {
                   <div className="span mb-3 ">
                     <i className="bi bi-clock"></i> 22 April 2024 <i className="bi bi-chat-dots"></i> 10 comments
                   </div>
-                  <a href="#" className="btn">Learn More <i className="bi bi-chevron-right"></i></a>
+                  <Link to="" className="btn">
+                    Learn More <i className="bi bi-chevron-right"></i>  
+                  </Link>
                 </div>
               </div>
             </div>

@@ -17,7 +17,6 @@ const ProductSinglePage = () => {
   const [quantity, setQuantity] = useState(1);
   const cartMessageStatus = useSelector(getCartMessageStatus);
 
-  // getting single product
   useEffect(() => {
     dispatch(fetchAsyncProductSingle(id));
 
@@ -26,7 +25,7 @@ const ProductSinglePage = () => {
         dispatch(setCartMessageOff());
       }, 2000);
     }
-  }, [cartMessageStatus]);
+  }, [dispatch, id, cartMessageStatus]);
 
   let discountedPrice = (product?.price) - (product?.price * (product?.discountPercentage / 100));
   if (productSingleStatus === STATUS.LOADING) {

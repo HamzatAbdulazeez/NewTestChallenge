@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,44 +13,79 @@ const Footer = () => {
             </h4>
           </div>
           <div class="media-icons">
-            <a><i class="fab fa-facebook-f"></i></a>
-            <a><i class="fab fa-twitter"></i></a>
-            <a><i class="fab fa-instagram"></i></a>
-            <a><i class="fab fa-linkedin-in"></i></a>
-            <a><i class="fab fa-youtube"></i></a>
+            <Link to=""><i class="fab fa-facebook-f"></i></Link>
+            <Link to=""><i class="fab fa-twitter"></i></Link>
+            <Link to=""><i class="fab fa-instagram"></i></Link>
+            <Link to=""><i class="fab fa-linkedin-in"></i></Link>
+            <Link to=""><i class="fab fa-youtube"></i></Link>
           </div>
         </div>
         <div class="link-boxes">
           <ul class="box">
             <li class="link_name">Company Info</li>
-            <li><a>Home</a></li>
-            <li><a>About us</a></li>
-            <li><a>Carrier</a></li>
-            <li><a>We are hiring</a></li>
-            <li><a>Contact Us</a></li>
+            <li>
+              <Link to="">Home</Link>
+            </li>
+            <li>
+              <Link to="">About us</Link>
+            </li>
+            <li>
+              <Link to="">Carrier</Link>
+            </li>
+            <li>
+              <Link to="">We are hiring</Link>
+            </li>
+            <li>
+              <Link to="">Contact Us</Link>
+            </li>
           </ul>
           <ul class="box">
             <li class="link_name">Legal</li>
-            <li><a>Home</a></li>
-            <li><a>About us</a></li>
-            <li><a>Carrier</a></li>
-            <li><a>Blog</a></li>
-            <li><a>We are hiring</a></li>
+            <li>
+              <Link to="">Home</Link>
+            </li>
+            <li>
+              <Link to="">About us</Link>
+            </li>
+            <li>
+              <Link to="">Blog</Link>
+            </li>
+            <li>
+              <Link to="">We are hiring</Link>
+            </li>
+            <li>
+              <Link to="">Contact Us</Link>
+            </li>
           </ul>
           <ul class="box">
             <li class="link_name">Features</li>
-            <li><a> Business Marketing</a></li>
-            <li><a>User Analytic</a></li>
-            <li><a>Live Chat</a></li>
-            <li><a>Unlimited Support</a></li>
+            <li>
+              <Link to="">Business Marketing</Link>
+            </li>
+            <li>
+              <Link to="">User Analytic</Link>
+            </li>
+            <li>
+              <Link to="">Live Chat</Link>
+            </li>
+            <li>
+              <Link to="">Unlimited Support</Link>
+            </li>
           </ul>
           <ul class="box">
             <li class="link_name">Resources</li>
-            <li><a> IOS & Android</a></li>
-            <li><a>Watch a Demo</a></li>
-            <li><a>Customers</a></li>
-            <li><a>
-              API</a></li>
+            <li>
+              <Link to="">IOS & Android</Link>
+            </li>
+            <li>
+              <Link to="">Watch a Demo</Link>
+            </li>
+            <li>
+              <Link to="">Customers</Link>
+            </li>
+            <li>
+              <Link to="">API</Link>
+            </li>
           </ul>
           <ul class="box input-box">
 
@@ -58,7 +94,6 @@ const Footer = () => {
               <li><input type="text" required placeholder="Enter your email"></input></li>
               <li><input type="button" value="Subscribe"></input></li>
             </form>
-
           </ul>
         </div>
       </div>
