@@ -60,7 +60,7 @@ const ProductSinglePage = () => {
 
   return (
     <main className='py-5 bg-whitesmoke'>
-      <div className='product-single'>
+      <div className='product-single amen'>
         <div className='container'>
           <div className='product-single-content bg-white grid'>
             <div className='product-single-l'>

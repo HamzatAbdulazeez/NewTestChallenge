@@ -71,11 +71,7 @@ select {
     font-size: 1.6rem
 }
 
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2rem
-}
+
 
 .flex {
     display: flex
@@ -158,7 +154,7 @@ select {
 }
 
 .text-orange {
-    color: #f94e30
+    color: #23856D
 }
 
 .text-light-orange {
@@ -194,7 +190,7 @@ select {
 }
 
 .bg-orange {
-    background-color: #f94e30
+    background-color: #23856D
 }
 
 .bg-light-orange {
@@ -538,7 +534,11 @@ select {
     top: 0;
     width: 6px;
     height: 100%;
-    background-color: #f94e30
+    background-color: #23856D
+}
+
+.amen{
+    margin-left: 150px !important;
 }
 
 .product-single .product-single-content {
@@ -598,7 +598,7 @@ select {
 }
 
 .product-single .product-single-content .product-single-l .product-img .product-img-thumbs .thumb-item:hover {
-    border-color: #f94e30
+    border-color: #23856D
 }
 
 .product-single .product-single-content .product-single-l .product-img .product-img-thumbs .thumb-item:hover img {
@@ -662,7 +662,7 @@ select {
 .product-single .product-single-content .product-single-r .product-details .btns .btn {
     height: 46px;
     font-size: 15px;
-    border: 1px solid #f94e30;
+    border: 1px solid #23856D;
     padding: 0 1.8rem;
     transition: all 300ms ease-in-out
 }
@@ -673,11 +673,11 @@ select {
 
 .product-single .product-single-content .product-single-r .product-details .btns .btn:first-child {
     background-color: #ffeee8;
-    color: #f94e30
+    color: #23856D
 }
 
 .product-single .product-single-content .product-single-r .product-details .btns .btn:last-child {
-    background-color: #f94e30;
+    background-color: #23856D;
     color: #fff
 }
 

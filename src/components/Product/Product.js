@@ -26,9 +26,7 @@ const Product = ({product}) => {
             <span className='new-price'>
               {formatPrice(product?.discountedPrice)}
             </span>
-            <span className='discount fw-6'>
-              ({product?.discountedPercentage}% Off)
-            </span>
+  
           </div>
         </div>
       </div>

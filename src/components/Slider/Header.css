@@ -1,0 +1,47 @@
+
+.Banner{
+    margin-top: 50px;
+    padding: 100px 0px 50px 0px;
+}
+.Banner .col-lg-6 img{
+    width: 100%;
+    pointer-events: none;
+}
+.Banner .col-lg-6 .differ img{
+    width: 100%;
+    height: 575px;
+    pointer-events: none;
+}
+@media (max-width:991px) {
+    .Banner{
+        margin-top: 1px !important;
+        padding: 80px 0px !important;
+        background-color: #fff;
+    }
+    .Banner .col-lg-6 .differ img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        pointer-events: none;
+    }
+    .Banner .col-lg-6 img{
+        width: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+}
+@media (max-width:1280px) {
+    .Banner .col-lg-6 .differ img{
+        width: 100%;
+        height: 490px;
+        margin-bottom: 20px;
+        pointer-events: none;
+    }
+    .Banner .col-lg-6 img{
+        width: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+}
+/* Banner Welcome  Ends*/

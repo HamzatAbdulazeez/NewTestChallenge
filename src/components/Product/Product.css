@@ -1,24 +1,16 @@
-@import"https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import "../../App.css"; @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
-@import "../../App.css";
-*,
-*::after,
-*::before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth
 }
 
-html {
-    font-size: 10px
-}
-
+html,
 body {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    font-family: "Poppins", sans-serif;
-    color: #000
+    font-family: 'Montserrat', sans-serif !important;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 ul {
@@ -70,11 +62,7 @@ select {
     font-size: 1.6rem
 }
 
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2rem
-}
+
 
 .flex {
     display: flex
@@ -157,7 +145,7 @@ select {
 }
 
 .text-orange {
-    color: #f94e30
+    color: #23856D
 }
 
 .text-light-orange {
@@ -193,7 +181,7 @@ select {
 }
 
 .bg-orange {
-    background-color: #f94e30
+    background-color: #23856D
 }
 
 .bg-light-orange {
@@ -537,7 +525,7 @@ select {
     top: 0;
     width: 6px;
     height: 100%;
-    background-color: #f94e30
+    background-color: #23856D
 }
 
 .product-item {
@@ -551,7 +539,7 @@ select {
     position: absolute;
     left: -5px;
     top: 1.6rem;
-    background-color: #f94e30;
+    background-color: #23856D;
     color: #fff;
     font-size: 13px;
     text-transform: capitalize;
@@ -569,7 +557,7 @@ select {
     height: 0;
     border-top: 5px solid rgba(0, 0, 0, 0);
     border-bottom: 5px solid rgba(0, 0, 0, 0);
-    border-right: 5px solid #f94e30
+    border-right: 5px solid #23856D;
 }
 
 .product-item-img {
@@ -590,7 +578,8 @@ select {
 
 .product-item-info .brand {
     border-bottom: 1px solid rgba(0, 0, 0, .05);
-    padding-bottom: .6rem
+    padding-bottom: .6rem;
+    color:#000;
 }
 
 .product-item-info .brand span:first-child {
@@ -600,11 +589,13 @@ select {
 .product-item-info .title {
     font-size: 14.5px;
     font-weight: 500;
-    letter-spacing: .3px
+    letter-spacing: .3px;
+    color: #737373;
 }
 
 .product-item-info .price {
-    position: relative
+    position: relative;
+    color: #23856D;
 }
 
 .product-item-info .price .old-price {
@@ -622,17 +613,7 @@ select {
 .product-item-info .price .discount {
     font-size: 13px;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #f83917
-}
-
-.product-item-info .price::after {
-    content: "";
-    position: absolute;
-    top: calc(100% + 6px);
-    height: 1px;
-    background-color: #fa7862;
-    width: 60px
+    color: #23856D;
 }
 
 .product-item:hover {
