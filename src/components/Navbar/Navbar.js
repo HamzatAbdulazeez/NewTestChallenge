@@ -13,8 +13,8 @@ const Navbar = () => {
 
   useEffect(() => {
     dispatch(getCartTotal());
-  },  [dispatch]);
-
+  }, [dispatch, carts]);
+  
   return (
     <header>
       <section className="headerContact">
