@@ -12,43 +12,43 @@ const Footer = () => {
             </h4>
           </div>
           <div class="media-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin-in"></i></a>
+            <a><i class="fab fa-youtube"></i></a>
           </div>
         </div>
         <div class="link-boxes">
           <ul class="box">
             <li class="link_name">Company Info</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">We are hiring</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a>Home</a></li>
+            <li><a>About us</a></li>
+            <li><a>Carrier</a></li>
+            <li><a>We are hiring</a></li>
+            <li><a>Contact Us</a></li>
           </ul>
           <ul class="box">
             <li class="link_name">Legal</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">We are hiring</a></li>
+            <li><a>Home</a></li>
+            <li><a>About us</a></li>
+            <li><a>Carrier</a></li>
+            <li><a>Blog</a></li>
+            <li><a>We are hiring</a></li>
           </ul>
           <ul class="box">
             <li class="link_name">Features</li>
-            <li><a href="#"> Business Marketing</a></li>
-            <li><a href="#">User Analytic</a></li>
-            <li><a href="#">Live Chat</a></li>
-            <li><a href="#">Unlimited Support</a></li>
+            <li><a> Business Marketing</a></li>
+            <li><a>User Analytic</a></li>
+            <li><a>Live Chat</a></li>
+            <li><a>Unlimited Support</a></li>
           </ul>
           <ul class="box">
             <li class="link_name">Resources</li>
-            <li><a href="#"> IOS & Android</a></li>
-            <li><a href="#">Watch a Demo</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">
+            <li><a> IOS & Android</a></li>
+            <li><a>Watch a Demo</a></li>
+            <li><a>Customers</a></li>
+            <li><a>
               API</a></li>
           </ul>
           <ul class="box input-box">
