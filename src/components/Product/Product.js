@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {formatPrice} from "../../utils/helpers";
+import { formatPrice } from "../../utils/helpers";
 import "./Product.css";
 
-const Product = ({product}) => {
+const Product = ({ product }) => {
   return (
-    <Link to = {`/product/${product?.id}`} key = {product?.id}>
+    <Link to={`/product/${product?.id}`} key={product?.id}>
       <div className='product-item bg-white'>
         <div className='category'>{product?.category}</div>
         <div className='product-item-img'>
-          <img className='img-cover' src = {product?.images[0]} alt = {product.title} />
+          <img className='img-cover' src={product?.images[0]} alt={product.title} />
         </div>
         <div className='product-item-info fs-14'>
           <div className='brand'>
@@ -26,7 +26,7 @@ const Product = ({product}) => {
             <span className='new-price'>
               {formatPrice(product?.discountedPrice)}
             </span>
-  
+
           </div>
         </div>
       </div>

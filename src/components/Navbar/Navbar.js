@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     dispatch(getCartTotal());
   }, [dispatch, carts]);
-  
+
   return (
     <header>
       <section className="headerContact">
@@ -107,10 +107,10 @@ const Navbar = () => {
                 <i className="bi bi-search"></i>
                 <i className="bi bi-heart"></i>
                 <span>
-                <Link to="/cart" className='cart-btn'>
-                  <div className='cart-items-value'> <i className="bi bi-cart3"></i><span className='above'>{itemsCount}</span></div>
-                  <CartModal carts={carts} />
-                </Link>
+                  <Link to="/cart" className='cart-btn'>
+                    <div className='cart-items-value'> <i className="bi bi-cart3"></i><span className='above'>{itemsCount}</span></div>
+                    <CartModal carts={carts} />
+                  </Link>
                 </span>
               </div>
             </div>
