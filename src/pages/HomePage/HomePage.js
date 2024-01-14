@@ -32,11 +32,6 @@ const HomePage = () => {
     }
   }
 
-  let catProductsOne = products.filter(product => product.category === categories[0]);
-  let catProductsTwo = products.filter(product => product.category === categories[1]);
-  let catProductsThree = products.filter(product => product.category === categories[2]);
-  let catProductsFour = products.filter(product => product.category === categories[3]);
-
   return (
     <main>
       <div>
